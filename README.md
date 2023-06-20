@@ -9,11 +9,11 @@ OpsGenie has an easy to use heartbeat function that you can leverage to let you 
 ## Usage
 
 First, create an OpsGenie "API" integration. This API key can be used among all heartbeats on your team. Configure it as:
- - :green_check_mark: Read Access
- - :green_check_mark: Create and Update Access
- - :empty_check_box: Delete Access
- - :green_check_mark: Restrict Configuration Access
- - :green_check_mark: Enabled
+ - ✅ Read Access
+ - ✅ Create and Update Access
+ - 🔲 Delete Access
+ - ✅ Restrict Configuration Access
+ - ✅ Enabled
 
 Note the API key provided.
 
@@ -25,6 +25,7 @@ In your automation, fire off this utility. For example:
 ogping -api-key 1f53d805-562e-47a6-800c-26b64a77efaa -name 'DuplicateDetector'
 ```
 
-**Note:** OpsGenie provides no feedback if the heartbeat name is incorrect. You should verify that the ping has been reflected in the UI.
+> **Warning**
+> OpsGenie provides no feedback if the heartbeat name is incorrect. You should verify that the ping has been reflected in the UI.
 
 Instead of either command line argument, `ogping` also will look for the `OPSGENIE_API_KEY` and `OPSGENIE_HEARTBEAT` environment variables. You may find that easier to use with kubernetes cron jobs.
