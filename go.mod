@@ -1,4 +1,4 @@
-module github.com/umich-its-ss/goping
+module github.com/umich-its-ss/ogping
 
 go 1.20
 
